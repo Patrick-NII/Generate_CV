@@ -244,7 +244,7 @@ df = explode_column(df, 'langues', 'langue_')
 df = explode_column(df, 'recommendations', 'recommendation_')
 
 # Exporter le DataFrame en fichier JSON
-json_filename = 'generated_cv_data.json'
+json_filename = 'cv_data.json'
 df.to_json(json_filename, orient='records', force_ascii=False, indent=4)
 
 print(f"DataFrame generated and saved to {json_filename}")
