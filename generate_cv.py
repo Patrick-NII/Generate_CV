@@ -4,7 +4,7 @@ import random
 import json
 
 # Initialiser Faker
-fake = Faker()
+fake = Faker('fr_FR')
 
 # Définir les colonnes du DataFrame
 columns = [
@@ -15,11 +15,11 @@ columns = [
 
 # Domaines étendus
 domaines = [
-    'IT', 'Healthcare', 'Finance', 'Education', 'Engineering', 'Marketing', 'Sales', 
-    'Legal', 'Manufacturing', 'Retail', 'Hospitality', 'Transportation', 'Construction', 
-    'Energy', 'Real Estate', 'Telecommunications', 'Media', 'Entertainment', 'Sports', 
-    'Science', 'Research', 'Public Administration', 'NGO', 'Consulting', 'Art', 
-    'Design', 'Agriculture', 'Food Industry', 'Aerospace', 'Defense'
+    'Informatique', 'Santé', 'Finance', 'Éducation', 'Ingénierie', 'Marketing', 'Ventes', 
+    'Droit', 'Manufacture', 'Commerce de détail', 'Hôtellerie', 'Transport', 'Construction', 
+    'Énergie', 'Immobilier', 'Télécommunications', 'Média', 'Divertissement', 'Sports', 
+    'Science', 'Recherche', 'Administration publique', 'ONG', 'Consulting', 'Art', 
+    'Design', 'Agriculture', 'Industrie alimentaire', 'Aérospatiale', 'Défense'
 ]
 
 # Types de handicaps
@@ -32,12 +32,35 @@ handicaps = [
 ]
 
 # Poids pour chaque type de handicap
-weights = [86] + [1] * (len(handicaps) - 1)  # 14% avec handicap répartis également parmi les types de handicaps
+weights_handicaps = [86] + [1] * (len(handicaps) - 1)  # 14% avec handicap répartis également parmi les types de handicaps
 
 # Générer les données factices
 def generate_fake_data(num_records):
     data = []
     for i in range(num_records):
+        ethnie = random.choices(
+            ['Africain', 'Maghrébin', 'Asiatique', 'Européen de l\'Est', 'Autre Européen'], 
+            weights=[22, 18, 7, 13, 40], 
+            k=1
+        )[0]
+
+        # Utiliser des noms et prénoms spécifiques selon l'ethnie
+        if ethnie == 'Africain':
+            prenom = fake.first_name_male()
+            nom = fake.last_name()
+        elif ethnie == 'Maghrébin':
+            prenom = fake.first_name_male()
+            nom = fake.last_name()
+        elif ethnie == 'Asiatique':
+            prenom = fake.first_name_male()
+            nom = fake.last_name()
+        elif ethnie == 'Européen de l\'Est':
+            prenom = fake.first_name_male()
+            nom = fake.last_name()
+        else:
+            prenom = fake.first_name()
+            nom = fake.last_name()
+        
         experiences = [
             {
                 'job_title': fake.job(),
@@ -77,8 +100,8 @@ def generate_fake_data(num_records):
         
         row = {
             'ID': i + 1,
-            'nom': fake.last_name(),
-            'prenom': fake.first_name(),
+            'nom': nom,
+            'prenom': prenom,
             'adresse': fake.address(),
             'email': fake.email(),
             'numero_de_telephone': fake.phone_number(),
@@ -94,8 +117,8 @@ def generate_fake_data(num_records):
             'age': random.randint(22, 65),
             'sexe': random.choice(sexes),
             'centres_d_interet': ', '.join(fake.words(nb=4)),
-            'ethnie': random.choice(['Asian', 'Black', 'Hispanic', 'White', 'Mixed', 'Native American']),
-            'handicap': random.choices(handicaps, weights=weights, k=1)[0]  # 14% avec handicap répartis parmi les types
+            'ethnie': ethnie,
+            'handicap': random.choices(handicaps, weights=weights_handicaps, k=1)[0]  # 14% avec handicap répartis parmi les types
         }
         data.append(row)
     return data
@@ -105,10 +128,16 @@ num_records = 12000
 data = generate_fake_data(num_records)
 df = pd.DataFrame(data, columns=columns)
 
-# Convertir les listes de dictionnaires en chaînes JSON pour les colonnes correspondantes
-df['experiences'] = df['experiences'].apply(lambda x: json.dumps(x, ensure_ascii=False))
-df['educations'] = df['educations'].apply(lambda x: json.dumps(x, ensure_ascii=False))
-df['recommendations'] = df['recommendations'].apply(lambda x: json.dumps(x, ensure_ascii=False))
+# Éclater les colonnes JSON en colonnes distinctes
+def explode_column(df, column, prefix):
+    temp_df = df.drop(column, axis=1).join(
+        pd.json_normalize(df[column], sep='_').add_prefix(prefix)
+    )
+    return temp_df
+
+df = explode_column(df, 'experiences', 'experience_')
+df = explode_column(df, 'educations', 'education_')
+df = explode_column(df, 'recommendations', 'recommendation_')
 
 # Exporter le DataFrame en fichier CSV
 csv_filename = 'generated_cv_data.csv'
