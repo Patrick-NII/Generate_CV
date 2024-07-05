@@ -14,7 +14,7 @@ Ce projet génère une base de données fictive de CV en utilisant Python, Faker
 
 1. Clonez le dépôt sur votre machine locale :
 
-    git clone https://github.com/votre-utilisateur/votre-depot.git
+    git clone https://github.com/Patrick-NII/Generate_CV.git
    
 
 
