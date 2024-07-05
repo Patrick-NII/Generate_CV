@@ -186,6 +186,361 @@ centres_d_interet = [
     'modélisme', 'radiocommandé', 'cinéma amateur', 'réalisation de films', 'montage vidéo'
 ] 
 
+# Descriptions de postes réalistes
+descriptions_postes = {
+    'Informatique': [
+        "Développement et maintenance des applications web",
+        "Analyse des besoins des utilisateurs et conception des solutions logicielles",
+        "Supervision des projets de développement informatique",
+        "Assistance technique et résolution des problèmes informatiques",
+        "Formation des utilisateurs sur les nouvelles technologies"
+    ],
+    'Santé': [
+        "Prise en charge des patients et administration des soins",
+        "Préparation et administration des médicaments",
+        "Gestion des dossiers médicaux et suivi des patients",
+        "Collaboration avec les médecins pour établir les diagnostics",
+        "Participation aux campagnes de prévention et d'éducation à la santé"
+    ],
+    'Finance': [
+        "Analyse des états financiers et élaboration des rapports",
+        "Gestion de la trésorerie et des flux de trésorerie",
+        "Réalisation des audits internes et externes",
+        "Élaboration des prévisions financières et des budgets",
+        "Conseil en matière de gestion financière et d'investissement"
+    ],
+    'Éducation': [
+        "Préparation et animation des cours",
+        "Suivi pédagogique et évaluation des étudiants",
+        "Développement de programmes éducatifs",
+        "Organisation et participation aux conseils de classe",
+        "Encadrement des activités périscolaires et des projets éducatifs"
+    ],
+    'Ingénierie': [
+        "Conception et développement des systèmes mécaniques",
+        "Réalisation des études techniques et des analyses de faisabilité",
+        "Supervision des projets de construction et de maintenance",
+        "Élaboration des plans et des schémas techniques",
+        "Collaboration avec les équipes de production pour améliorer les procédés"
+    ],
+    'Marketing': [
+        "Développement et mise en œuvre des stratégies marketing",
+        "Analyse du marché et identification des opportunités",
+        "Gestion des campagnes publicitaires et promotionnelles",
+        "Création de contenus pour les réseaux sociaux et le site web",
+        "Suivi des performances des actions marketing et ajustements"
+    ],
+    'Ventes': [
+        "Prospection de nouveaux clients et développement du portefeuille",
+        "Négociation des contrats et des conditions commerciales",
+        "Suivi des commandes et des livraisons",
+        "Gestion des réclamations et des litiges",
+        "Reporting des activités commerciales et des résultats"
+    ],
+    'Droit': [
+        "Conseil juridique aux clients et aux partenaires",
+        "Rédaction des contrats et des actes juridiques",
+        "Représentation des clients devant les tribunaux",
+        "Veille juridique et analyse de la réglementation",
+        "Médiation et résolution des conflits"
+    ],
+    'Média': [
+        "Réalisation de reportages et d'interviews",
+        "Montage et post-production des contenus audiovisuels",
+        "Gestion des réseaux sociaux et des relations publiques",
+        "Rédaction d'articles et de communiqués de presse",
+        "Organisation des événements médiatiques et des conférences de presse"
+    ],
+    'Manufacture': [
+        "Supervision des opérations de production",
+        "Contrôle de la qualité et respect des normes",
+        "Gestion des équipes et répartition des tâches",
+        "Optimisation des processus de production",
+        "Maintenance des équipements et des machines"
+    ],
+    'Commerce': [
+        "Gestion des stocks et des approvisionnements",
+        "Négociation avec les fournisseurs et les partenaires",
+        "Développement de la stratégie commerciale",
+        "Analyse des ventes et des performances",
+        "Organisation des promotions et des actions commerciales"
+    ],
+    'Hôtellerie': [
+        "Accueil et prise en charge des clients",
+        "Gestion des réservations et des check-ins/check-outs",
+        "Coordination des équipes de service",
+        "Supervision de l'entretien et de la propreté des chambres",
+        "Organisation des événements et des séminaires"
+    ],
+    'Transport': [
+        "Planification et optimisation des itinéraires",
+        "Gestion des équipes de chauffeurs",
+        "Suivi des livraisons et des expéditions",
+        "Maintenance des véhicules et des équipements",
+        "Respect des réglementations et des normes de sécurité"
+    ],
+    'Énergie': [
+        "Gestion des projets de production énergétique",
+        "Maintenance des infrastructures énergétiques",
+        "Optimisation des processus de distribution",
+        "Développement des énergies renouvelables",
+        "Veille technologique et innovation dans le secteur énergétique"
+    ],
+    'Immobilier': [
+        "Prospection et négociation des biens immobiliers",
+        "Gestion des locations et des ventes",
+        "Évaluation et estimation des biens",
+        "Conseil et accompagnement des clients",
+        "Suivi des projets de construction et de rénovation"
+    ],
+    'Télécommunications': [
+        "Installation et maintenance des équipements télécom",
+        "Gestion des réseaux et des infrastructures",
+        "Développement des offres et des services télécom",
+        "Support technique et assistance aux clients",
+        "Veille technologique et innovation dans le secteur télécom"
+    ],
+    'Divertissement': [
+        "Production et réalisation de contenus audiovisuels",
+        "Organisation des événements et des spectacles",
+        "Gestion des talents et des artistes",
+        "Promotion et marketing des productions",
+        "Collaboration avec les partenaires et les sponsors"
+    ],
+    'Sports': [
+        "Entraînement et préparation physique des athlètes",
+        "Organisation des compétitions et des événements sportifs",
+        "Gestion des installations sportives",
+        "Suivi médical et rééducation des sportifs",
+        "Promotion et développement des activités sportives"
+    ],
+    'Science': [
+        "Conduite des projets de recherche scientifique",
+        "Analyse des données et publication des résultats",
+        "Développement des protocoles expérimentaux",
+        "Collaboration avec les institutions et les partenaires",
+        "Veille scientifique et participation aux conférences"
+    ],
+    'Fonction publique': [
+        "Gestion administrative et budgétaire",
+        "Mise en œuvre des politiques publiques",
+        "Service aux citoyens et gestion des demandes",
+        "Coordination des équipes et des services",
+        "Contrôle et suivi des projets publics"
+    ],
+    'Logistique': [
+        "Planification et optimisation des flux logistiques",
+        "Gestion des stocks et des entrepôts",
+        "Suivi des expéditions et des livraisons",
+        "Négociation avec les transporteurs et les fournisseurs",
+        "Analyse des performances logistiques et amélioration continue"
+    ],
+    'Banque': [
+        "Gestion des comptes et des portefeuilles clients",
+        "Analyse financière et conseil en investissement",
+        "Suivi des opérations bancaires et des transactions",
+        "Développement des produits et services bancaires",
+        "Gestion des risques et conformité réglementaire"
+    ],
+    'Assurance': [
+        "Souscription des contrats d'assurance",
+        "Gestion des sinistres et des indemnisations",
+        "Analyse des risques et tarification",
+        "Conseil et accompagnement des clients",
+        "Développement des produits d'assurance"
+    ],
+    'Consulting': [
+        "Audit et analyse des besoins des clients",
+        "Développement des stratégies et des plans d'action",
+        "Gestion des projets de transformation",
+        "Formation et accompagnement des équipes",
+        "Veille et innovation dans le secteur du consulting"
+    ],
+    'Ressources humaines': [
+        "Recrutement et gestion des talents",
+        "Formation et développement des compétences",
+        "Gestion de la paie et des avantages sociaux",
+        "Développement des politiques RH",
+        "Gestion des conflits et des relations sociales"
+    ],
+    'Communication': [
+        "Développement et mise en œuvre des stratégies de communication",
+        "Gestion des relations publiques et des médias",
+        "Création de contenus et gestion des réseaux sociaux",
+        "Organisation des événements et des campagnes",
+        "Analyse des performances et ajustements"
+    ],
+    'Maintenance': [
+        "Planification et réalisation des opérations de maintenance",
+        "Diagnostic et réparation des pannes",
+        "Gestion des équipes de techniciens",
+        "Optimisation des processus de maintenance",
+        "Veille technologique et innovation dans la maintenance"
+    ],
+    'Sécurité': [
+        "Gestion des systèmes de sécurité",
+        "Surveillance et contrôle des accès",
+        "Formation et sensibilisation à la sécurité",
+        "Intervention en cas d'incident",
+        "Veille et mise en conformité réglementaire"
+    ],
+    'Automobile': [
+        "Conception et développement des véhicules",
+        "Production et assemblage des pièces automobiles",
+        "Maintenance et réparation des véhicules",
+        "Gestion des stocks et des approvisionnements",
+        "Commercialisation et vente des véhicules"
+    ],
+    'Mode': [
+        "Création et design des collections",
+        "Production et assemblage des pièces",
+        "Gestion des stocks et des approvisionnements",
+        "Commercialisation et vente des produits",
+        "Promotion et marketing des collections"
+    ],
+    'Technique': [
+        "Installation et maintenance des équipements",
+        "Diagnostic et réparation des pannes",
+        "Gestion des équipes de techniciens",
+        "Optimisation des processus techniques",
+        "Veille technologique et innovation dans le domaine technique"
+    ],
+    'Production': [
+        "Planification et gestion de la production",
+        "Supervision des équipes et des opérations",
+        "Contrôle de la qualité et respect des normes",
+        "Optimisation des processus de production",
+        "Maintenance des équipements de production"
+    ],
+    'Agriculture': [
+        "Gestion des cultures et des élevages",
+        "Planification des récoltes et des productions",
+        "Optimisation des processus agricoles",
+        "Maintenance des équipements agricoles",
+        "Commercialisation et vente des produits agricoles"
+    ],
+    'Art': [
+        "Création et production des œuvres artistiques",
+        "Organisation des expositions et des événements",
+        "Promotion et commercialisation des œuvres",
+        "Gestion des relations avec les galeristes et les collectionneurs",
+        "Formation et animation des ateliers artistiques"
+    ],
+    'Design': [
+        "Conception et développement des produits",
+        "Création des maquettes et des prototypes",
+        "Gestion des projets de design",
+        "Optimisation des processus de production",
+        "Veille et innovation dans le domaine du design"
+    ],
+    'Environnement': [
+        "Gestion des projets de développement durable",
+        "Analyse et réduction de l'empreinte carbone",
+        "Gestion des déchets et des ressources",
+        "Sensibilisation et formation aux enjeux environnementaux",
+        "Veille et innovation dans le domaine environnemental"
+    ],
+    'Tourisme': [
+        "Organisation et gestion des voyages",
+        "Accueil et prise en charge des clients",
+        "Promotion et commercialisation des destinations touristiques",
+        "Gestion des réservations et des contrats",
+        "Développement des produits et services touristiques"
+    ],
+    'Assistance': [
+        "Gestion des appels et des agendas",
+        "Organisation des déplacements et des réunions",
+        "Accueil des visiteurs et gestion des courriers",
+        "Support administratif et logistique",
+        "Gestion des bases de données et des dossiers"
+    ],
+    'Social': [
+        "Accompagnement des personnes en difficulté",
+        "Organisation des activités et des ateliers",
+        "Gestion des dossiers et des demandes d'aide",
+        "Coordination avec les partenaires sociaux",
+        "Sensibilisation et formation aux enjeux sociaux"
+    ],
+    'Événementiel': [
+        "Organisation et gestion des événements",
+        "Coordination des équipes et des prestataires",
+        "Promotion et communication des événements",
+        "Gestion des budgets et des plannings",
+        "Suivi et évaluation des événements"
+    ],
+    'Manutention': [
+        "Chargement et déchargement des marchandises",
+        "Gestion des stocks et des entrepôts",
+        "Maintenance des équipements de manutention",
+        "Optimisation des processus de manutention",
+        "Respect des normes de sécurité"
+    ],
+    'Défense': [
+        "Gestion des opérations de défense",
+        "Formation et entraînement des personnels",
+        "Maintenance des équipements de défense",
+        "Veille et gestion des risques",
+        "Coordination avec les partenaires internationaux"
+    ],
+    'ONG': [
+        "Gestion des projets humanitaires",
+        "Coordination avec les partenaires locaux",
+        "Gestion des équipes et des bénévoles",
+        "Collecte de fonds et gestion des dons",
+        "Sensibilisation et communication sur les enjeux humanitaires"
+    ],
+    'Industrie alimentaire': [
+        "Production et transformation des produits alimentaires",
+        "Contrôle de la qualité et respect des normes",
+        "Gestion des stocks et des approvisionnements",
+        "Optimisation des processus de production",
+        "Maintenance des équipements de production"
+    ],
+    'Culture': [
+        "Organisation et gestion des événements culturels",
+        "Promotion et communication des événements",
+        "Gestion des relations avec les artistes et les partenaires",
+        "Suivi et évaluation des événements",
+        "Veille et innovation dans le domaine culturel"
+    ],
+    'BTP': [
+        "Gestion des projets de construction",
+        "Coordination des équipes et des sous-traitants",
+        "Contrôle de la qualité et respect des normes",
+        "Optimisation des processus de construction",
+        "Maintenance des équipements et des infrastructures"
+    ],
+    'Recherche': [
+        "Conduite des projets de recherche",
+        "Analyse des données et publication des résultats",
+        "Développement des protocoles expérimentaux",
+        "Collaboration avec les institutions et les partenaires",
+        "Veille scientifique et participation aux conférences"
+    ],
+    'Aérospatial': [
+        "Conception et développement des véhicules spatiaux",
+        "Gestion des projets aérospatiaux",
+        "Maintenance des équipements aérospatiaux",
+        "Optimisation des processus de production",
+        "Veille technologique et innovation dans le domaine aérospatial"
+    ],
+    'Technologie': [
+        "Développement et maintenance des systèmes informatiques",
+        "Gestion des bases de données et des infrastructures",
+        "Sécurité et protection des données",
+        "Veille technologique et innovation",
+        "Support technique et assistance aux utilisateurs"
+    ],
+    'Innovation': [
+        "Gestion des projets d'innovation",
+        "Recherche et développement de nouvelles technologies",
+        "Veille technologique et analyse des tendances",
+        "Développement de prototypes et de maquettes",
+        "Promotion et commercialisation des innovations"
+    ]
+}
+
+
 # Compétences humaines
 competences_humaines_list = [
     'Communication', 'Travail en équipe', 'Gestion du temps', 'Résolution de problèmes', 'Leadership',
