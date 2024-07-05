@@ -480,6 +480,60 @@ competences_techniques = {
                     'Gestion des missions d’exploration', 'Gestion des missions de recherche', 'Gestion des missions de surveillance', 'Gestion des missions de défense', 'Gestion des missions de sécurité']
 }
 
+# Liste de noms d'entreprises classées par domaine
+entreprises = {
+    'Informatique': ['Google', 'Microsoft', 'IBM', 'Capgemini', 'Atos', 'SAP'],
+    'Santé': ['Sanofi', 'Pfizer', 'Roche', 'Novartis', 'GSK'],
+    'Finance': ['BNP Paribas', 'Société Générale', 'Crédit Agricole', 'HSBC', 'AXA'],
+    'Éducation': ['Acadomia', 'Khan Academy', 'Coursera', 'OpenClassrooms', 'Éducation Nationale'],
+    'Ingénierie': ['Dassault Systèmes', 'Schneider Electric', 'Thales', 'Alstom', 'Bouygues'],
+    'Marketing': ['Publicis', 'Havas', 'WPP', 'Omnicom', 'Dentsu'],
+    'Ventes': ['Decathlon', 'Carrefour', 'Auchan', 'Casino', 'Intermarché'],
+    'Droit': ['Gide Loyrette Nouel', 'Clifford Chance', 'Baker McKenzie', 'Linklaters', 'Allen & Overy'],
+    'Média': ['Le Monde', 'Le Figaro', 'Les Echos', 'L\'Equipe', 'M6'],
+    'Manufacture': ['Michelin', 'Renault', 'Peugeot', 'Valeo', 'Airbus'],
+    'Commerce': ['Carrefour', 'Auchan', 'LVMH', 'Hermès', 'Kering'],
+    'Hôtellerie': ['Accor', 'Marriott', 'Hilton', 'Hyatt', 'InterContinental'],
+    'Transport': ['SNCF', 'Air France', 'RATP', 'Transdev', 'Keolis'],
+    'Énergie': ['Total', 'EDF', 'Engie', 'Schneider Electric', 'Veolia'],
+    'Immobilier': ['Bouygues Immobilier', 'Nexity', 'Vinci Immobilier', 'Icade', 'Unibail-Rodamco'],
+    'Télécommunications': ['Orange', 'SFR', 'Bouygues Telecom', 'Free', 'Altice'],
+    'Divertissement': ['Disney', 'Netflix', 'Warner Bros', 'Universal', 'Sony Pictures'],
+    'Sports': ['Nike', 'Adidas', 'Puma', 'Decathlon', 'Under Armour'],
+    'Science': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN'],
+    'Fonction publique': ['Ministère de l\'Intérieur', 'Ministère de la Défense', 'Ministère de la Santé', 'Ministère de l\'Éducation Nationale', 'Ministère des Finances'],
+    'Logistique': ['DHL', 'FedEx', 'UPS', 'Kuehne+Nagel', 'Geodis'],
+    'Banque': ['BNP Paribas', 'Crédit Agricole', 'Société Générale', 'HSBC', 'Natixis'],
+    'Assurance': ['AXA', 'Allianz', 'Generali', 'MAIF', 'MACIF'],
+    'Consulting': ['McKinsey', 'Boston Consulting Group', 'Bain & Company', 'Roland Berger', 'Oliver Wyman'],
+    'Ressources humaines': ['Adecco', 'Randstad', 'Manpower', 'Michael Page', 'Hays'],
+    'Communication': ['Publicis', 'Havas', 'Dentsu', 'Omnicom', 'WPP'],
+    'Maintenance': ['Vinci', 'Eiffage', 'Bouygues Construction', 'Colas', 'Fayat'],
+    'Sécurité': ['Securitas', 'Prosegur', 'G4S', 'Allied Universal', 'Brinks'],
+    'Automobile': ['Renault', 'Peugeot', 'Citroën', 'Tesla', 'Volkswagen'],
+    'Mode': ['LVMH', 'Kering', 'Chanel', 'Hermès', 'Gucci'],
+    'Technique': ['Schneider Electric', 'Siemens', 'ABB', 'Legrand', 'Bosch'],
+    'Production': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation'],
+    'Agriculture': ['Monsanto', 'Syngenta', 'Bayer', 'BASF', 'Dow AgroSciences'],
+    'Art': ['Christie\'s', 'Sotheby\'s', 'Gagosian', 'Hauser & Wirth', 'Pace Gallery'],
+    'Design': ['IDEO', 'Frog Design', 'Pentagram', 'Landor', 'R/GA'],
+    'Environnement': ['Veolia', 'Suez', 'Schneider Electric', 'EDF', 'Engie'],
+    'Tourisme': ['Airbnb', 'Booking.com', 'Expedia', 'TripAdvisor', 'TUI'],
+    'Assistance': ['Seris', 'Onet', 'Fiducial', 'Samsic', 'Atalian'],
+    'Social': ['Emmaüs', 'Secours Catholique', 'Croix-Rouge', 'Médecins Sans Frontières', 'Amnesty International'],
+    'Événementiel': ['GL Events', 'Comexposium', 'Reed Exhibitions', 'VIPARIS', 'MCI Group'],
+    'Manutention': ['Manitou', 'Toyota Material Handling', 'Caterpillar', 'Hyster-Yale', 'Jungheinrich'],
+    'Défense': ['Thales', 'Dassault Aviation', 'Naval Group', 'MBDA', 'Airbus Defence and Space'],
+    'ONG': ['Greenpeace', 'WWF', 'Amnesty International', 'Oxfam', 'Médecins Sans Frontières'],
+    'Industrie alimentaire': ['Danone', 'Nestlé', 'Unilever', 'Mondelez', 'Kraft Heinz'],
+    'Culture': ['Le Louvre', 'Musée d\'Orsay', 'Centre Pompidou', 'Bibliothèque Nationale de France', 'Opéra de Paris'],
+    'BTP': ['Bouygues Construction', 'Eiffage', 'Vinci Construction', 'Colas', 'Spie Batignolles'],
+    'Recherche': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN'],
+    'Aérospatial': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation'],
+    'Technologie': ['Google', 'Microsoft', 'IBM', 'Apple', 'Amazon'],
+    'Innovation': ['Tesla', 'SpaceX', 'Google X', 'Apple', 'Microsoft']
+}
+
 
 # Tâches par domaine
 taches = {
