@@ -1523,13 +1523,13 @@ def generer_cv(id):
     
     # Déterminer le nombre d'expériences en fonction de l'âge
     if age < 30:
-        nb_experiences = random.randint(1, 3)
+        nb_experiences = random.randint(0, 3)
     elif age < 40:
-        nb_experiences = random.randint(3, 5)
+        nb_experiences = random.randint(0, 5)
     elif age < 50:
-        nb_experiences = random.randint(5, 7)
+        nb_experiences = random.randint(0, 7)
     else:
-        nb_experiences = random.randint(7, 10)
+        nb_experiences = random.randint(0, 10)
 
     experiences = []
     for _ in range(nb_experiences):
@@ -1539,8 +1539,8 @@ def generer_cv(id):
         taches_realisees = random.sample(taches[domaine], k=random.randint(1, 3))
         experiences.append({
             'entreprise': entreprise,
-            'debut': debut,
-            'fin': fin,
+            'debut': debut.isoformat(),
+            'fin': fin.isoformat(),
             'taches': taches_realisees
         })
 
@@ -1572,12 +1572,39 @@ def generer_cv(id):
         nb_competences_techniques = random.randint(10, 15)
     
     competences_techniques_domaine = competences_techniques.get(domaine, [])
-    if nb_competences_techniques > len(competences_techniques_domaine):
-        nb_competences_techniques = len(competences_techniques_domaine)
-    
-    competences_techniques_personne = random.sample(competences_techniques_domaine, k=nb_competences_techniques)
+    competences_techniques_personne = random.sample(competences_techniques_domaine, k=min(nb_competences_techniques, len(competences_techniques_domaine)))
 
     centres_interet = random.sample(centres_d_interet, k=random.randint(2, 5))
+
+    recommendations = [
+        {
+            'nom': fake.name(),
+            'poste': fake.job(),
+            'entreprise': random.choice(entreprises[domaine]),
+            'email': fake.email(domain=random.choices(
+                ['google.com', 'msn.com', 'aol.com', 'orange.fr', 'free.fr', 'yahoo.com', 'outlook.com', 'hotmail.com'],
+                weights=[50, 10, 10, 10, 5, 20, 10, 10],
+                k=1)[0]),
+            'telephone': fake.phone_number()
+        }
+        for _ in range(random.randint(0, 3))  # Maximum 3 recommendations
+    ]
+
+    statut = random.choice(['En poste', 'Demandeur d\'emploi', 'étudiant', 'freelance', 'Alternant', 'stagiaire'])
+
+    # Calcul de la prétention salariale
+    salaire_base = 21  # Base de 21k€
+    if niveau_obtenu == 'Baccalauréat':
+        salaire_base += 10
+    elif niveau_obtenu == 'BTS':
+        salaire_base += 15
+    elif niveau_obtenu in ['Licence', 'Master']:
+        salaire_base += 20
+    elif niveau_obtenu == 'Ingénieur':
+        salaire_base += 40
+    elif niveau_obtenu == 'Doctorat':
+        salaire_base += 50
+    pretention_salariale = salaire_base + (len(experiences) * 2)  # +2k€ par année d'expérience
 
     return {
         'id': id,
@@ -1595,18 +1622,15 @@ def generer_cv(id):
         'langues': langues_parlees,
         'competences_humaines': competences_humaines,
         'competences_techniques': competences_techniques_personne,
-        'centres_interet': centres_interet
+        'centres_interet': centres_interet,
+        'recommendations': recommendations,
+        'statut': statut,
+        'pretention_salariale': f"{pretention_salariale}k€"
     }
 
-
-# Générer 12500 CVs
+# Générer 12 500 CVs
 cv_list = [generer_cv(i) for i in range(1, 12501)]
-cv_list2 = cv_list
 
-
-# Sauvegarder en JSON et CSV
+# Sauvegarder en JSON avec indentation
 with open('cv_data.json', 'w', encoding='utf-8') as f:
-    json.dump(cv_list2, f, ensure_ascii=False, indent=4)
-    
-    
-
+    json.dump(cv_list, f, ensure_ascii=False, indent=4)
