@@ -1,7 +1,7 @@
 import pandas as pd
 from faker import Faker
 import random
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Initialiser Faker
 fake = Faker('fr_FR')
@@ -71,8 +71,11 @@ prenoms_pays = {
     'Afrique du Sud': {
         'homme': ["Thabo", "Mandla", "Sizwe", "Sipho"],
         'femme': ["Nandi", "Thandeka", "Ntombi", "Nomvula"]
+    },
+    'Royaume-Uni': {
+        'homme': ["James", "John", "Robert", "Michael"],
+        'femme': ["Mary", "Patricia", "Jennifer", "Linda"]
     }
-    
 }
 
 noms_pays = {
@@ -99,7 +102,8 @@ noms_pays = {
     'Bénin': ["Agnidé", "Sèmèvo", "Dossou", "Koutché", "Houngbédji"],
     'Angola': ["Da Costa", "Mendosa", "De Oliveira", "Maria", "João"],
     'Mali': ["Modibo", "Aïssata", "Kadiatou", "Bakary", "Djénéba"],
-    'Mauritanie': ["Mohamed", "Aminata", "El Hacen", "Mbarka", "Cheikh"]
+    'Mauritanie': ["Mohamed", "Aminata", "El Hacen", "Mbarka", "Cheikh"],
+    'Royaume-Uni': ["Smith", "Johnson", "Williams", "Jones", "Brown"]
 }
 
 # Nationalités par continent
@@ -540,7 +544,6 @@ descriptions_postes = {
     ]
 }
 
-
 # Compétences humaines
 competences_humaines_list = [
     'Communication', 'Travail en équipe', 'Gestion du temps', 'Résolution de problèmes', 'Leadership',
@@ -888,7 +891,6 @@ entreprises = {
     'Technologie': ['Google', 'Microsoft', 'IBM', 'Apple', 'Amazon'],
     'Innovation': ['Tesla', 'SpaceX', 'Google X', 'Apple', 'Microsoft']
 }
-
 
 # Tâches par domaine
 taches = {
@@ -1238,8 +1240,12 @@ taches = {
 def generer_cv(id):
     nationalite = random.choice(nationalites_afrique + nationalites_asie + nationalites_europe + nationalites_ameriques)
     genre = random.choice(['homme', 'femme'])
-    prenom = random.choice(prenoms_pays[nationalite][genre])
-    nom = random.choice(noms_pays[nationalite])
+    if nationalite not in prenoms_pays:
+        prenom = fake.first_name_male() if genre == 'homme' else fake.first_name_female()
+        nom = fake.last_name()
+    else:
+        prenom = random.choice(prenoms_pays[nationalite][genre])
+        nom = random.choice(noms_pays[nationalite])
     pays = nationalite  # Simplification, on considère que le pays est le même que la nationalité
     age = random.randint(22, 65)
     handicap = random.choices(handicaps, weights=weights_handicaps, k=1)[0]
@@ -1259,7 +1265,7 @@ def generer_cv(id):
 
     experiences = []
     for _ in range(nb_experiences):
-        entreprise = random.choice(descriptions_postes[domaine]) + f" {intitule} chez {random.choice(entreprises)}."
+        entreprise = random.choice(descriptions_postes[domaine]) + f" {intitule} chez {random.choice(entreprises[domaine])}."
         debut = fake.date_between(start_date='-20y', end_date='-1y')
         fin = fake.date_between(start_date=debut, end_date='today')
         taches_realisees = random.sample(taches[domaine], k=random.randint(1, 3))
@@ -1332,8 +1338,3 @@ df.to_json('cv_data.json', orient='records', lines=True, force_ascii=False)
 
 # Sauvegarder en CSV
 df.to_csv('cv_data.csv', index=False, sep=';', encoding='utf-8')
-
-# Affichage pour vérifier
-import ace_tools as tools; tools.display_dataframe_to_user(name="CV Data", dataframe=df)
-
-df.head()
