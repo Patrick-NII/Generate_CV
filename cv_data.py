@@ -1525,11 +1525,11 @@ def generer_cv(id):
     if age < 30:
         nb_experiences = random.randint(0, 3)
     elif age < 40:
-        nb_experiences = random.randint(0, 5)
+        nb_experiences = random.randint(2, 5)
     elif age < 50:
-        nb_experiences = random.randint(0, 7)
+        nb_experiences = random.randint(3, 7)
     else:
-        nb_experiences = random.randint(0, 10)
+        nb_experiences = random.randint(4, 10)
 
     experiences = []
     for _ in range(nb_experiences):
