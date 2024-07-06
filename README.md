@@ -7,6 +7,7 @@ Ce projet génère une base de données fictive de CV en utilisant Python, Faker
 - [Installation](#installation)
 - [Usage](#usage)
 - [Structure des Données](#structure-des-données)
+- [Démarche](#démarche)
 - [Contributions](#contributions)
 - [Licence](#licence)
 
@@ -16,9 +17,6 @@ Ce projet génère une base de données fictive de CV en utilisant Python, Faker
 
     git clone https://github.com/Patrick-NII/Generate_CV.git
    
-
-
-
 ## Usage
 
 3. Les fichiers `cv_data.json` et `cv_data.csv` seront générés dans le répertoire courant.
@@ -28,8 +26,8 @@ Ce projet génère une base de données fictive de CV en utilisant Python, Faker
 Les CV générés contiennent les champs suivants :
 
 - **ID** : Identifiant unique du CV
-- **nom** : Nom du candidat
 - **prenom** : Prénom du candidat
+- **nom** : Nom du candidat
 - **adresse** : Adresse du candidat
 - **email** : Adresse email du candidat
 - **numero_de_telephone** : Numéro de téléphone du candidat
@@ -62,6 +60,41 @@ Les CV générés contiennent les champs suivants :
 - **nationalite** : Nationalité du candidat
 - **handicap** : Type de handicap, si applicable
 - **pretention_salariale** : Prétention salariale exprimée en k€
+
+## Démarche
+
+### 1. Initialisation
+
+- **Bibliothèque utilisée** : Faker, pour générer des données réalistes (prénoms, noms, adresses, entreprises, etc.).
+- **Importation des bibliothèques** : Importation des bibliothèques nécessaires comme `faker`, `random`, `datetime` et `json`.
+
+### 2. Définition des Données de Base
+
+- **Domaines** : Une liste de domaines professionnels variés (ex : Informatique, Marketing, etc.).
+- **Handicaps** : Une liste de types de handicaps avec une distribution réaliste.
+- **Prénoms et Noms** : Des dictionnaires contenant des prénoms et noms spécifiques par genre et nationalité.
+- **Nationalités** : Des listes de nationalités par continent (Afrique, Asie, Europe, Amériques).
+- **Écoles** : Une liste d'écoles réelles classées par niveau d'études.
+- **Langues** : Un ensemble de combinaisons de langues parlées avec différents niveaux de maîtrise.
+- **Centres d'intérêt** : Une liste de centres d'intérêt communs.
+- **Descriptions de postes** : Un dictionnaire de descriptions de postes réalistes par domaine.
+- **Compétences** : Des listes de compétences humaines et techniques classées par domaine.
+- **Entreprises** : Une liste de noms d'entreprises classées par domaine.
+- **Tâches** : Un dictionnaire de tâches courantes par domaine.
+
+### 3. Génération des CVs
+
+- **Sélection des Données** : Choix aléatoire de données telles que nationalité, genre, prénoms, noms, etc.
+- **Génération des Expériences Professionnelles** : En fonction de l'âge de la personne, un certain nombre d'expériences sont générées avec des dates aléatoires et des tâches associées.
+- **Génération du Parcours Éducatif** : Génération des diplômes dans un ordre chronologique cohérent avec des années d'obtention valides.
+- **Sélection des Langues Parlées** : Choix des langues parlées avec des niveaux de maîtrise réalistes.
+- **Sélection des Compétences** : Génération aléatoire de compétences humaines et techniques en fonction du domaine d'expertise.
+- **Génération des Centres d'Intérêt et Recommandations** : Ajout de centres d'intérêt et de recommandations professionnelles.
+- **Calcul de la Prétention Salariale** : Calcul basé sur le niveau d'éducation et les années d'expérience.
+
+### 4. Sauvegarde des Données
+
+- **Format de Sauvegarde** : Les 12 500 CVs générés sont sauvegardés dans un fichier JSON avec une indentation pour une meilleure lisibilité.
 
 ## Contributions
 
