@@ -1514,6 +1514,7 @@ taches = {
 }
 
 # Fonction pour générer un CV
+# Fonction pour générer un CV
 def generer_cv(id):
     nationalite = random.choice(nationalites_afrique + nationalites_asie + nationalites_europe + nationalites_ameriques)
     genre = random.choice(['homme', 'femme'])
@@ -1563,7 +1564,9 @@ def generer_cv(id):
             'ecole': ecole,
             'annee': annee_obtention
         })
-        annee_obtention_precedente = annee_obtention - 1  # Assurer que les diplômes sont obtenus dans un ordre chronologique cohérent
+        if annee_obtention > 2000:
+            annee_obtention_precedente = annee_obtention - 1  # Assurer que les diplômes sont obtenus dans un ordre chronologique cohérent
+    
     # Trier le parcours éducatif par année décroissante
     parcours_educatif = sorted(parcours_educatif, key=lambda x: x['annee'], reverse=True)
 
