@@ -352,7 +352,7 @@ langues = [
     {'français': 'C2', 'serbe': 'B1', 'croate': 'A2'}
 ]
 
-weights_langues = [8, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2]
+weights_langues = [50, 40, 30, 30, 20, 10, 5, 30, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 
 # Sélection des langues parlées avec les poids
 langues_parlees = random.choices(langues, weights=weights_langues, k=1)[0]
