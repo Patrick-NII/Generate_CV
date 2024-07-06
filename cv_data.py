@@ -1603,14 +1603,8 @@ def generer_cv(id):
 cv_list = [generer_cv(i) for i in range(1, 12501)]
 
 # Convertir en DataFrame
-df = pd.DataFrame(cv_list)
+df_cv = pd.DataFrame(cv_list)
 
-# Sauvegarder en JSON
-df.to_json('cv_data.json', orient='records', lines=True, force_ascii=False)
-
-# Sauvergarder au format JSON avec indentation pour une meilleure lisibilité
-with open('cv_data_pretty.json', 'w', encoding='utf-8') as f:
-    json.dump(cv_list, f, ensure_ascii=False, indent=4)
-
-# Sauvegarder en CSV
-df.to_csv('cv_data.csv', index=False, sep=';', encoding='utf-8')
+# Sauvegarder en JSON et CSV
+df_cv.to_json('cv_data.json', orient='records', lines=True, force_ascii=False, date_format='iso')
+df_cv.to_csv('cv_data.csv', index=False, sep=';', encoding='utf-8')
