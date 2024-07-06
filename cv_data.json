@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "prenom": "Oscar",
+        "nom": "Pedersen",
+        "nationalite": "Danemark",
+        "genre": "homme",
+        "age": 23,
+        "pays": "Danemark",
+        "handicap": "aucun",
+        "domaine": "Manufacture",
+        "intitule": "Supervision de la production",
+        "experiences": [
+            {
+                "entreprise": "Supervision de la production chez Airbus",
+                "debut": 
