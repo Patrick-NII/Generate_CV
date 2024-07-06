@@ -1639,8 +1639,8 @@ def generer_cv(id):
     }
 
 # Générer 12 500 CVs
-cv_list = [generer_cv(i) for i in range(1, 501)]
+cv_list = [generer_cv(i) for i in range(1, 12501)]
 
 # Sauvegarder en JSON avec indentation
-with open('ex_cv_data.json', 'w', encoding='utf-8') as f:
+with open('full_cv_data.json', 'w', encoding='utf-8') as f:
     json.dump(cv_list, f, ensure_ascii=False, indent=4)
