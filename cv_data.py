@@ -331,15 +331,15 @@ ecoles = {
                  'Université de Bordeaux', 'Université de Lille', 'Université de Toulouse']
 }
 
-# Langues
+# Langues avec poids ajustés
 langues = [
     {'français': 'C2', 'anglais': 'B2', 'espagnol': 'B1'},
     {'français': 'C2', 'anglais': 'A2', 'allemand': 'B1'},
     {'français': 'C1', 'anglais': 'B2', 'italien': 'A2'},
     {'français': 'C2', 'anglais': 'C1', 'chinois': 'B2'},
     {'français': 'C2', 'arabe': 'C1', 'anglais': 'B1'},
-    {'français': 'C2', 'lingala': 'B1', 'swahili': 'A2'},
-    {'français': 'C2', 'wolof': 'B2', 'peul': 'B1'},
+    {'français': 'C2', 'lingala': 'B1', 'swahili': 'A2'},         # Modification prévue: langues directement dans pays et nationalités
+    {'français': 'C2', 'wolof': 'B2', 'peul': 'B1'},              # pour une meilleure coherence
     {'français': 'C2', 'portugais': 'B2', 'créole': 'B1'},
     {'français': 'C2', 'russe': 'B2', 'polonais': 'B1'},
     {'français': 'C2', 'japonais': 'B1', 'coréen': 'A2'},
@@ -351,6 +351,11 @@ langues = [
     {'français': 'C2', 'slovaque': 'B1', 'tchèque': 'A2'},
     {'français': 'C2', 'serbe': 'B1', 'croate': 'A2'}
 ]
+
+weights_langues = [8, 7, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2]
+
+# Sélection des langues parlées avec les poids
+langues_parlees = random.choices(langues, weights=weights_langues, k=1)[0]
 
 # Centres d'intérêt
 centres_d_interet = [
@@ -1548,15 +1553,17 @@ def generer_cv(id):
     parcours_educatif = []
     niveaux_etudes = ['Bep', 'Baccalauréat', 'BTS', 'Licence', 'Master', 'Ingénieur', 'Doctorat']
     niveau_obtenu = random.choice(niveaux_etudes)
+    annee_obtention_precedente = datetime.now().year
+    
     for niveau in niveaux_etudes[:niveaux_etudes.index(niveau_obtenu) + 1]:
         ecole = random.choice(ecoles[niveau])
-        annee_obtention = random.randint(2000, datetime.now().year)
+        annee_obtention = random.randint(2000, annee_obtention_precedente)
         parcours_educatif.append({
             'niveau': niveau,
             'ecole': ecole,
             'annee': annee_obtention
         })
-    
+        annee_obtention_precedente = annee_obtention - 1  # Assurer que les diplômes sont obtenus dans un ordre chronologique cohérent
     # Trier le parcours éducatif par année décroissante
     parcours_educatif = sorted(parcours_educatif, key=lambda x: x['annee'], reverse=True)
 
