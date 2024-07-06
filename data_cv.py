@@ -41,40 +41,196 @@ prenoms_pays = {
         'femme': ["Fatima", "Nour", "Yasmine", "Amina"]
     },
     'Chine': {
-        'homme': ["Linh", "Minh", "Tuan", "Dung"],
-        'femme': ["Yen", "Thanh", "Huong", "Hoa"]
+        'homme': ["Wei", "Ming", "Jian", "Li", "Chen"],
+        'femme': ["Xia", "Ying", "Lan", "Mei", "Lina"]
     },
     'Hongrie': {
-        'homme': ["Boris", "Ivan", "Viktor", "Maksim"],
-        'femme': ["Mila", "Daria", "Anya", "Nina"]
+        'homme': ["Bence", "László", "Gábor", "Tamás", "Zoltán"],
+        'femme': ["Anna", "Katalin", "Eszter", "Zsófia", "Erika"]
     },
     'France': {
-        'homme': ["Jean", "Pierre", "Julien", "Antoine"],
-        'femme': ["Marie", "Lucie", "Camille", "Manon"]
+        'homme': ["Jean", "Pierre", "Julien", "Antoine", "Louis"],
+        'femme': ["Marie", "Lucie", "Camille", "Manon", "Claire"]
     },
     'Algérie': {
-        'homme': ["Karim", "Mehdi", "Youssef", "Sofiane"],
-        'femme': ["Zineb", "Sabrina", "Nadia", "Nora"]
+        'homme': ["Karim", "Mehdi", "Youssef", "Sofiane", "Nadir"],
+        'femme': ["Zineb", "Sabrina", "Nadia", "Nora", "Lina"]
     },
     'Tunisie': {
-        'homme': ["Ali", "Fares", "Mehdi", "Amine"],
-        'femme': ["Leila", "Rania", "Hana", "Sarra"]
+        'homme': ["Ali", "Fares", "Mehdi", "Amine", "Hamza"],
+        'femme': ["Leila", "Rania", "Hana", "Sarra", "Mouna"]
     },
     'Côte d\'Ivoire': {
-        'homme': ["Adama", "Kouadio", "Bakary", "Mamadou"],
-        'femme': ["Aïcha", "Fatoumata", "Kadiatou", "Aminata"]
+        'homme': ["Adama", "Kouadio", "Bakary", "Mamadou", "Yao"],
+        'femme': ["Aïcha", "Fatoumata", "Kadiatou", "Aminata", "Mariama"]
     },
     'Nigeria': {
-        'homme': ["Olufemi", "Chinedu", "Obinna", "Chukwu"],
-        'femme': ["Ngozi", "Yemi", "Chinwe", "Chinonye"]
+        'homme': ["Olufemi", "Chinedu", "Obinna", "Chukwu", "Emeka"],
+        'femme': ["Ngozi", "Yemi", "Chinwe", "Chinonye", "Ifunanya"]
     },
     'Afrique du Sud': {
-        'homme': ["Thabo", "Mandla", "Sizwe", "Sipho"],
-        'femme': ["Nandi", "Thandeka", "Ntombi", "Nomvula"]
+        'homme': ["Thabo", "Mandla", "Sizwe", "Sipho", "Bongani"],
+        'femme': ["Nandi", "Thandeka", "Ntombi", "Nomvula", "Zanele"]
+    },
+    'Vietnam': {
+        'homme': ["Nguyen", "Tran", "Le", "Pham", "Hoang"],
+        'femme': ["Thuy", "Linh", "Trang", "Huong", "Anh"]
+    },
+    'Cambodge': {
+        'homme': ["Sok", "Chea", "Chhim", "Pich", "Chann"],
+        'femme': ["Sreyna", "Chanthou", "Sothea", "Pisey", "Davy"]
+    },
+    'Inde': {
+        'homme': ["Rahul", "Sanjay", "Amit", "Vijay", "Arjun"],
+        'femme': ["Anjali", "Sunita", "Pooja", "Kavita", "Rekha"]
+    },
+    'Pakistan': {
+        'homme': ["Ahmed", "Ali", "Hassan", "Imran", "Usman"],
+        'femme': ["Aisha", "Fatima", "Nadia", "Sana", "Zara"]
+    },
+    'Japon': {
+        'homme': ["Hiroshi", "Kenji", "Takeshi", "Akira", "Yuto"],
+        'femme': ["Yuki", "Sakura", "Rin", "Miyu", "Hana"]
+    },
+    'Corée du Sud': {
+        'homme': ["Minho", "Jisoo", "Hyun", "Jin", "Taeyang"],
+        'femme': ["Jiwoo", "Soojin", "Yuna", "Hyejin", "Nari"]
+    },
+    'Congo': {
+        'homme': ["Mbemba", "Ndombe", "Ngita", "Mukoko", "Yoka"],
+        'femme': ["Mwamba", "Ndaye", "Mbila", "Nzinga", "Lunda"]
+    },
+    'Cameroun': {
+        'homme': ["Ndongo", "Ndomo", "Nji", "Biya", "Mbappe"],
+        'femme': ["Ngono", "Nadege", "Elodie", "Berthe", "Florence"]
+    },
+    'Togo': {
+        'homme': ["Kodjo", "Afi", "Yawovi", "Ayélé", "Kossi"],
+        'femme': ["Akouvi", "Ama", "Afi", "Dede", "Yawa"]
+    },
+    'Ghana': {
+        'homme': ["Kwame", "Kojo", "Yaw", "Kofi", "Kwesi"],
+        'femme': ["Akosua", "Adwoa", "Abena", "Afia", "Ama"]
+    },
+    'Bénin': {
+        'homme': ["Agnidé", "Sèmèvo", "Dossou", "Koutché", "Houngbédji"],
+        'femme': ["Adjovi", "Akpédjé", "Amavi", "Gnanhoui", "Ayawa"]
+    },
+    'Angola': {
+        'homme': ["Manuel", "João", "Pedro", "José", "Luís"],
+        'femme': ["Ana", "Maria", "Josefa", "Luisa", "Teresa"]
+    },
+    'Mali': {
+        'homme': ["Modibo", "Bakary", "Seydou", "Oumar", "Amadou"],
+        'femme': ["Aïssata", "Kadiatou", "Djénéba", "Fatoumata", "Mariam"]
+    },
+    'Mauritanie': {
+        'homme': ["Mohamed", "Ahmed", "Cheikh", "El Hacen", "Sid'Ahmed"],
+        'femme': ["Aminata", "Fatimatou", "Mbarka", "Mariem", "Safi"]
     },
     'Royaume-Uni': {
-        'homme': ["James", "John", "Robert", "Michael"],
-        'femme': ["Mary", "Patricia", "Jennifer", "Linda"]
+        'homme': ["James", "John", "Robert", "Michael", "William"],
+        'femme': ["Mary", "Patricia", "Jennifer", "Linda", "Elizabeth"]
+    },
+    'Allemagne': {
+        'homme': ["Lukas", "Finn", "Jonas", "Leon", "Felix"],
+        'femme': ["Sophie", "Marie", "Hannah", "Emilia", "Anna"]
+    },
+    'Italie': {
+        'homme': ["Luca", "Matteo", "Leonardo", "Francesco", "Alessandro"],
+        'femme': ["Sofia", "Giulia", "Aurora", "Alice", "Martina"]
+    },
+    'Espagne': {
+        'homme': ["Hugo", "Daniel", "Pablo", "Alejandro", "Adrián"],
+        'femme': ["Lucía", "Sofía", "Martina", "María", "Paula"]
+    },
+    'Portugal': {
+        'homme': ["João", "Francisco", "Martim", "Santiago", "Afonso"],
+        'femme': ["Maria", "Leonor", "Matilde", "Carolina", "Ana"]
+    },
+    'Pays-Bas': {
+        'homme': ["Daan", "Sem", "Milan", "Levi", "Lucas"],
+        'femme': ["Emma", "Tess", "Sophie", "Julia", "Anna"]
+    },
+    'Belgique': {
+        'homme': ["Lucas", "Louis", "Nathan", "Liam", "Noah"],
+        'femme': ["Emma", "Olivia", "Louise", "Mila", "Alice"]
+    },
+    'Suisse': {
+        'homme': ["Liam", "Noah", "Elias", "Luca", "Levi"],
+        'femme': ["Mia", "Emma", "Sofia", "Lena", "Lina"]
+    },
+    'Suède': {
+        'homme': ["Lucas", "William", "Oscar", "Hugo", "Elias"],
+        'femme': ["Alice", "Maja", "Lilly", "Ella", "Wilma"]
+    },
+    'Norvège': {
+        'homme': ["Jakob", "Emil", "Noah", "Oliver", "William"],
+        'femme': ["Emma", "Nora", "Olivia", "Sofie", "Emilie"]
+    },
+    'Danemark': {
+        'homme': ["William", "Oscar", "Lucas", "Emil", "Oliver"],
+        'femme': ["Emma", "Ida", "Clara", "Ella", "Sofia"]
+    },
+    'Finlande': {
+        'homme': ["Elias", "Leo", "Eino", "Mikael", "Onni"],
+        'femme': ["Aino", "Sofia", "Emilia", "Ella", "Olivia"]
+    },
+    'Grèce': {
+        'homme': ["Giorgos", "Dimitris", "Kostas", "Nikos", "Yannis"],
+        'femme': ["Maria", "Eleni", "Katerina", "Sophia", "Anna"]
+    },
+    'Pologne': {
+        'homme': ["Jakub", "Jan", "Szymon", "Antoni", "Filip"],
+        'femme': ["Zuzanna", "Julia", "Maja", "Hanna", "Aleksandra"]
+    },
+    'Ukraine': {
+        'homme': ["Oleksandr", "Dmytro", "Andriy", "Yuriy", "Mykola"],
+        'femme': ["Olena", "Natalia", "Svitlana", "Iryna", "Tetiana"]
+    },
+    'Russie': {
+        'homme': ["Dmitry", "Alexey", "Sergey", "Ivan", "Vladimir"],
+        'femme': ["Anna", "Olga", "Elena", "Maria", "Natalia"]
+    },
+    'Brésil': {
+        'homme': ["Miguel", "Arthur", "Davi", "Gabriel", "Heitor"],
+        'femme': ["Alice", "Sophia", "Laura", "Valentina", "Heloisa"]
+    },
+    'Argentine': {
+        'homme': ["Santiago", "Mateo", "Juan", "Tomas", "Lucas"],
+        'femme': ["Sofia", "Valentina", "Martina", "Luciana", "Emma"]
+    },
+    'Mexique': {
+        'homme': ["Santiago", "Mateo", "Sebastián", "Leonardo", "Matías"],
+        'femme': ["Sofía", "Valentina", "Regina", "Mariana", "Victoria"]
+    },
+    'Colombie': {
+        'homme': ["Santiago", "Mateo", "Samuel", "Alejandro", "Daniel"],
+        'femme': ["Sofía", "Valentina", "Isabella", "Mariana", "Gabriela"]
+    },
+    'Chili': {
+        'homme': ["Agustín", "Benjamín", "Vicente", "Martín", "Matías"],
+        'femme': ["Isabella", "Florencia", "Josefa", "Martina", "Emilia"]
+    },
+    'Pérou': {
+        'homme': ["Sebastián", "Mateo", "Thiago", "Martín", "Daniel"],
+        'femme': ["Camila", "María José", "Valentina", "Victoria", "Luciana"]
+    },
+    'Venezuela': {
+        'homme': ["Santiago", "Mateo", "Gabriel", "Daniel", "Alejandro"],
+        'femme': ["Sofía", "Valentina", "Camila", "Victoria", "Luciana"]
+    },
+    'Canada': {
+        'homme': ["Liam", "Noah", "Jackson", "Lucas", "James"],
+        'femme': ["Emma", "Olivia", "Sophia", "Charlotte", "Amelia"]
+    },
+    'États-Unis': {
+        'homme': ["Liam", "Noah", "William", "James", "Logan"],
+        'femme': ["Emma", "Olivia", "Ava", "Isabella", "Sophia"]
+    },
+    'Antilles Françaises': {
+        'homme': ["Jean-Luc", "Pierre", "Michel", "Jacques", "Alain"],
+        'femme': ["Marie", "Chantal", "Suzanne", "Monique", "Brigitte"]
     }
 }
 
@@ -103,7 +259,32 @@ noms_pays = {
     'Angola': ["Da Costa", "Mendosa", "De Oliveira", "Maria", "João"],
     'Mali': ["Modibo", "Aïssata", "Kadiatou", "Bakary", "Djénéba"],
     'Mauritanie': ["Mohamed", "Aminata", "El Hacen", "Mbarka", "Cheikh"],
-    'Royaume-Uni': ["Smith", "Johnson", "Williams", "Jones", "Brown"]
+    'Royaume-Uni': ["Smith", "Johnson", "Williams", "Jones", "Brown"],
+    'Allemagne': ["Müller", "Schmidt", "Schneider", "Fischer", "Weber"],
+    'Italie': ["Rossi", "Russo", "Ferrari", "Esposito", "Bianchi"],
+    'Espagne': ["García", "Martínez", "López", "Sánchez", "Pérez"],
+    'Portugal': ["Silva", "Santos", "Ferreira", "Pereira", "Oliveira"],
+    'Pays-Bas': ["de Jong", "Jansen", "de Vries", "van den Berg", "Bakker"],
+    'Belgique': ["Peeters", "Janssens", "Maes", "Jacobs", "Mertens"],
+    'Suisse': ["Müller", "Meier", "Schmid", "Keller", "Weber"],
+    'Suède': ["Johansson", "Andersson", "Karlsson", "Nilsson", "Eriksson"],
+    'Norvège': ["Hansen", "Johansen", "Olsen", "Larsen", "Andersen"],
+    'Danemark': ["Nielsen", "Jensen", "Hansen", "Pedersen", "Andersen"],
+    'Finlande': ["Korhonen", "Virtanen", "Mäkinen", "Nieminen", "Mäkelä"],
+    'Grèce': ["Papadopoulos", "Nikolaou", "Georgiou", "Christou", "Panagiotou"],
+    'Pologne': ["Nowak", "Kowalski", "Wiśniewski", "Wójcik", "Kamiński"],
+    'Ukraine': ["Shevchenko", "Kovalenko", "Bondarenko", "Tkachenko", "Kravchenko"],
+    'Russie': ["Ivanov", "Smirnov", "Kuznetsov", "Popov", "Vasiliev"],
+    'Brésil': ["Silva", "Santos", "Oliveira", "Souza", "Lima"],
+    'Argentine': ["González", "Rodríguez", "Pérez", "Fernández", "Gómez"],
+    'Mexique': ["Hernández", "García", "Martínez", "López", "González"],
+    'Colombie': ["García", "Rodríguez", "Martínez", "López", "González"],
+    'Chili': ["González", "Muñoz", "Rojas", "Díaz", "Pérez"],
+    'Pérou': ["García", "Rodríguez", "Martínez", "López", "González"],
+    'Venezuela': ["González", "Rodríguez", "Martínez", "López", "García"],
+    'Canada': ["Smith", "Brown", "Tremblay", "Martin", "Roy"],
+    'États-Unis': ["Smith", "Johnson", "Williams", "Jones", "Brown"],
+    'Antilles Françaises': ["Durand", "Leroy", "Morel", "Simon", "Laurent"]
 }
 
 # Nationalités par continent
@@ -541,6 +722,46 @@ descriptions_postes = {
         "Veille technologique et analyse des tendances",
         "Développement de prototypes et de maquettes",
         "Promotion et commercialisation des innovations"
+    ],
+    'Beauté': [
+        'Conseil en soins de la peau et en maquillage',
+        'Coupe et coiffure personnalisées',
+        'Réalisation de manucures et de pédicures',
+        'Soins du visage et massages relaxants',
+        'Vente de produits de beauté',
+        'Formation en techniques esthétiques',
+        'Gestion des rendez-vous et des clients',
+        'Développement de nouveaux traitements de beauté'
+    ],
+    'Restauration': [
+        'Préparation et présentation des plats',
+        'Gestion des commandes et des stocks',
+        'Service en salle et accueil des clients',
+        'Nettoyage et entretien de la cuisine',
+        'Création de menus innovants',
+        'Supervision de l\'équipe de cuisine',
+        'Organisation d\'événements gastronomiques',
+        'Application des normes d\'hygiène et de sécurité'
+    ],
+    'Sécurité': [
+        'Surveillance des lieux et des accès',
+        'Gestion des systèmes de sécurité',
+        'Intervention en cas d\'urgence',
+        'Rédaction de rapports de sécurité',
+        'Formation des agents de sécurité',
+        'Patrouilles régulières et gestion des incidents',
+        'Contrôle des accès et des entrées',
+        'Mise en place de protocoles de sécurité'
+    ],
+    'Innovation': [
+        'Développement de nouvelles technologies',
+        'Veille technologique et analyse des tendances',
+        'Conception et test de prototypes',
+        'Gestion de projets innovants',
+        'Collaboration avec les équipes de recherche',
+        'Test et validation des nouveaux produits',
+        'Analyse des besoins du marché',
+        'Rédaction et dépôt de brevets'
     ]
 }
 
@@ -840,57 +1061,60 @@ competences_techniques = {
 
 # Liste de noms d'entreprises classées par domaine
 entreprises = {
-    'Informatique': ['Google', 'Microsoft', 'IBM', 'Capgemini', 'Atos', 'SAP'],
-    'Santé': ['Sanofi', 'Pfizer', 'Roche', 'Novartis', 'GSK'],
-    'Finance': ['BNP Paribas', 'Société Générale', 'Crédit Agricole', 'HSBC', 'AXA'],
-    'Éducation': ['Acadomia', 'Khan Academy', 'Coursera', 'OpenClassrooms', 'Éducation Nationale'],
-    'Ingénierie': ['Dassault Systèmes', 'Schneider Electric', 'Thales', 'Alstom', 'Bouygues'],
-    'Marketing': ['Publicis', 'Havas', 'WPP', 'Omnicom', 'Dentsu'],
-    'Ventes': ['Decathlon', 'Carrefour', 'Auchan', 'Casino', 'Intermarché'],
-    'Droit': ['Gide Loyrette Nouel', 'Clifford Chance', 'Baker McKenzie', 'Linklaters', 'Allen & Overy'],
-    'Média': ['Le Monde', 'Le Figaro', 'Les Echos', 'L\'Equipe', 'M6'],
-    'Manufacture': ['Michelin', 'Renault', 'Peugeot', 'Valeo', 'Airbus'],
-    'Commerce': ['Carrefour', 'Auchan', 'LVMH', 'Hermès', 'Kering'],
-    'Hôtellerie': ['Accor', 'Marriott', 'Hilton', 'Hyatt', 'InterContinental'],
-    'Transport': ['SNCF', 'Air France', 'RATP', 'Transdev', 'Keolis'],
-    'Énergie': ['Total', 'EDF', 'Engie', 'Schneider Electric', 'Veolia'],
-    'Immobilier': ['Bouygues Immobilier', 'Nexity', 'Vinci Immobilier', 'Icade', 'Unibail-Rodamco'],
-    'Télécommunications': ['Orange', 'SFR', 'Bouygues Telecom', 'Free', 'Altice'],
-    'Divertissement': ['Disney', 'Netflix', 'Warner Bros', 'Universal', 'Sony Pictures'],
-    'Sports': ['Nike', 'Adidas', 'Puma', 'Decathlon', 'Under Armour'],
-    'Science': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN'],
-    'Fonction publique': ['Ministère de l\'Intérieur', 'Ministère de la Défense', 'Ministère de la Santé', 'Ministère de l\'Éducation Nationale', 'Ministère des Finances'],
-    'Logistique': ['DHL', 'FedEx', 'UPS', 'Kuehne+Nagel', 'Geodis'],
-    'Banque': ['BNP Paribas', 'Crédit Agricole', 'Société Générale', 'HSBC', 'Natixis'],
-    'Assurance': ['AXA', 'Allianz', 'Generali', 'MAIF', 'MACIF'],
-    'Consulting': ['McKinsey', 'Boston Consulting Group', 'Bain & Company', 'Roland Berger', 'Oliver Wyman'],
-    'Ressources humaines': ['Adecco', 'Randstad', 'Manpower', 'Michael Page', 'Hays'],
-    'Communication': ['Publicis', 'Havas', 'Dentsu', 'Omnicom', 'WPP'],
-    'Maintenance': ['Vinci', 'Eiffage', 'Bouygues Construction', 'Colas', 'Fayat'],
-    'Sécurité': ['Securitas', 'Prosegur', 'G4S', 'Allied Universal', 'Brinks'],
-    'Automobile': ['Renault', 'Peugeot', 'Citroën', 'Tesla', 'Volkswagen'],
-    'Mode': ['LVMH', 'Kering', 'Chanel', 'Hermès', 'Gucci'],
-    'Technique': ['Schneider Electric', 'Siemens', 'ABB', 'Legrand', 'Bosch'],
-    'Production': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation'],
-    'Agriculture': ['Monsanto', 'Syngenta', 'Bayer', 'BASF', 'Dow AgroSciences'],
-    'Art': ['Christie\'s', 'Sotheby\'s', 'Gagosian', 'Hauser & Wirth', 'Pace Gallery'],
-    'Design': ['IDEO', 'Frog Design', 'Pentagram', 'Landor', 'R/GA'],
-    'Environnement': ['Veolia', 'Suez', 'Schneider Electric', 'EDF', 'Engie'],
-    'Tourisme': ['Airbnb', 'Booking.com', 'Expedia', 'TripAdvisor', 'TUI'],
-    'Assistance': ['Seris', 'Onet', 'Fiducial', 'Samsic', 'Atalian'],
-    'Social': ['Emmaüs', 'Secours Catholique', 'Croix-Rouge', 'Médecins Sans Frontières', 'Amnesty International'],
-    'Événementiel': ['GL Events', 'Comexposium', 'Reed Exhibitions', 'VIPARIS', 'MCI Group'],
-    'Manutention': ['Manitou', 'Toyota Material Handling', 'Caterpillar', 'Hyster-Yale', 'Jungheinrich'],
-    'Défense': ['Thales', 'Dassault Aviation', 'Naval Group', 'MBDA', 'Airbus Defence and Space'],
-    'ONG': ['Greenpeace', 'WWF', 'Amnesty International', 'Oxfam', 'Médecins Sans Frontières'],
-    'Industrie alimentaire': ['Danone', 'Nestlé', 'Unilever', 'Mondelez', 'Kraft Heinz'],
-    'Culture': ['Le Louvre', 'Musée d\'Orsay', 'Centre Pompidou', 'Bibliothèque Nationale de France', 'Opéra de Paris'],
-    'BTP': ['Bouygues Construction', 'Eiffage', 'Vinci Construction', 'Colas', 'Spie Batignolles'],
-    'Recherche': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN'],
-    'Aérospatial': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation'],
-    'Technologie': ['Google', 'Microsoft', 'IBM', 'Apple', 'Amazon'],
-    'Innovation': ['Tesla', 'SpaceX', 'Google X', 'Apple', 'Microsoft']
+    'Informatique': ['Google', 'Microsoft', 'IBM', 'Capgemini', 'Atos', 'SAP', 'Apple', 'Oracle', 'Dell', 'Intel'],
+    'Santé': ['Sanofi', 'Pfizer', 'Roche', 'Novartis', 'GSK', 'Johnson & Johnson', 'Merck', 'AstraZeneca', 'AbbVie', 'Bristol-Myers Squibb'],
+    'Finance': ['BNP Paribas', 'Société Générale', 'Crédit Agricole', 'HSBC', 'AXA', 'Goldman Sachs', 'JP Morgan', 'Morgan Stanley', 'Deutsche Bank', 'UBS'],
+    'Éducation': ['Acadomia', 'Khan Academy', 'Coursera', 'OpenClassrooms', 'Éducation Nationale', 'Udemy', 'edX', 'FutureLearn', 'Skillshare', 'LinkedIn Learning'],
+    'Ingénierie': ['Dassault Systèmes', 'Schneider Electric', 'Thales', 'Alstom', 'Bouygues', 'Siemens', 'Bosch', 'Honeywell', 'General Electric', 'ABB'],
+    'Marketing': ['Publicis', 'Havas', 'WPP', 'Omnicom', 'Dentsu', 'Ogilvy', 'BBDO', 'Leo Burnett', 'TBWA', 'Saatchi & Saatchi'],
+    'Ventes': ['Decathlon', 'Carrefour', 'Auchan', 'Casino', 'Intermarché', 'Amazon', 'Walmart', 'Alibaba', 'eBay', 'Home Depot'],
+    'Droit': ['Gide Loyrette Nouel', 'Clifford Chance', 'Baker McKenzie', 'Linklaters', 'Allen & Overy', 'Freshfields Bruckhaus Deringer', 'Herbert Smith Freehills', 'Norton Rose Fulbright', 'White & Case', 'CMS'],
+    'Média': ['Le Monde', 'Le Figaro', 'Les Echos', 'L\'Equipe', 'M6', 'TF1', 'France Télévisions', 'Canal+', 'RTL', 'Ouest-France'],
+    'Manufacture': ['Michelin', 'Renault', 'Peugeot', 'Valeo', 'Airbus', 'Boeing', 'Safran', 'Thales', 'Alstom', 'Saint-Gobain'],
+    'Commerce': ['Carrefour', 'Auchan', 'LVMH', 'Hermès', 'Kering', 'L\'Oréal', 'Sephora', 'Zara', 'H&M', 'Nike'],
+    'Hôtellerie': ['Accor', 'Marriott', 'Hilton', 'Hyatt', 'InterContinental', 'Wyndham', 'Best Western', 'Radisson', 'Choice Hotels', 'Four Seasons'],
+    'Transport': ['SNCF', 'Air France', 'RATP', 'Transdev', 'Keolis', 'DHL', 'FedEx', 'UPS', 'Maersk', 'CMA CGM'],
+    'Énergie': ['Total', 'EDF', 'Engie', 'Schneider Electric', 'Veolia', 'Chevron', 'ExxonMobil', 'Shell', 'BP', 'Eni'],
+    'Immobilier': ['Bouygues Immobilier', 'Nexity', 'Vinci Immobilier', 'Icade', 'Unibail-Rodamco', 'CBRE', 'JLL', 'Savills', 'Colliers', 'Klepierre'],
+    'Télécommunications': ['Orange', 'SFR', 'Bouygues Telecom', 'Free', 'Altice', 'AT&T', 'Verizon', 'Vodafone', 'Telefónica', 'T-Mobile'],
+    'Divertissement': ['Disney', 'Netflix', 'Warner Bros', 'Universal', 'Sony Pictures', 'Paramount', 'DreamWorks', 'HBO', 'NBCUniversal', '20th Century Fox'],
+    'Sports': ['Nike', 'Adidas', 'Puma', 'Decathlon', 'Under Armour', 'Reebok', 'Asics', 'New Balance', 'Columbia', 'Patagonia'],
+    'Science': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN', 'Institut Pasteur', 'NASA', 'ESA', 'Max Planck Society', 'MIT'],
+    'Fonction publique': ['Ministère de l\'Intérieur', 'Ministère de la Défense', 'Ministère de la Santé', 'Ministère de l\'Éducation Nationale', 'Ministère des Finances', 'Commission Européenne', 'ONU', 'OCDE', 'FMI', 'Banque Mondiale'],
+    'Logistique': ['DHL', 'FedEx', 'UPS', 'Kuehne+Nagel', 'Geodis', 'DB Schenker', 'CEVA Logistics', 'XPO Logistics', 'Rhenus', 'Nippon Express'],
+    'Banque': ['BNP Paribas', 'Crédit Agricole', 'Société Générale', 'HSBC', 'Natixis', 'Barclays', 'Citi', 'Wells Fargo', 'Bank of America', 'Santander'],
+    'Assurance': ['AXA', 'Allianz', 'Generali', 'MAIF', 'MACIF', 'Aviva', 'Prudential', 'MetLife', 'Zurich Insurance', 'Chubb'],
+    'Consulting': ['McKinsey', 'Boston Consulting Group', 'Bain & Company', 'Roland Berger', 'Oliver Wyman', 'PwC', 'Deloitte', 'EY', 'KPMG', 'Accenture'],
+    'Ressources humaines': ['Adecco', 'Randstad', 'Manpower', 'Michael Page', 'Hays', 'Robert Half', 'Kelly Services', 'Robert Walters', 'Hudson', 'Korn Ferry'],
+    'Communication': ['Publicis', 'Havas', 'Dentsu', 'Omnicom', 'WPP', 'FleishmanHillard', 'Ketchum', 'Weber Shandwick', 'Edelman', 'Burson Cohn & Wolfe'],
+    'Maintenance': ['Vinci', 'Eiffage', 'Bouygues Construction', 'Colas', 'Fayat', 'SNC Lavalin', 'Jacobs Engineering', 'Fluor', 'Bechtel', 'TechnipFMC'],
+    'Sécurité': ['Securitas', 'Prosegur', 'G4S', 'Allied Universal', 'Brinks', 'ADT', 'Tyco', 'Stanley Security', 'GardaWorld', 'Axis Communications'],
+    'Automobile': ['Renault', 'Peugeot', 'Citroën', 'Tesla', 'Volkswagen', 'Toyota', 'Ford', 'General Motors', 'BMW', 'Honda'],
+    'Mode': ['LVMH', 'Kering', 'Chanel', 'Hermès', 'Gucci', 'Prada', 'Louis Vuitton', 'Dior', 'Burberry', 'Versace'],
+    'Technique': ['Schneider Electric', 'Siemens', 'ABB', 'Legrand', 'Bosch', 'Honeywell', 'General Electric', 'Emerson', 'Rockwell Automation', 'Mitsubishi Electric'],
+    'Production': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation', 'Lockheed Martin', 'Northrop Grumman', 'General Dynamics', 'Raytheon', 'BAE Systems'],
+    'Agriculture': ['Monsanto', 'Syngenta', 'Bayer', 'BASF', 'Dow AgroSciences', 'John Deere', 'CNH Industrial', 'AGCO', 'Kubota', 'Archer Daniels Midland'],
+    'Art': ['Christie\'s', 'Sotheby\'s', 'Gagosian', 'Hauser & Wirth', 'Pace Gallery', 'Tate Modern', 'MoMA', 'Louvre', 'Uffizi Gallery', 'Guggenheim'],
+    'Design': ['IDEO', 'Frog Design', 'Pentagram', 'Landor', 'R/GA', 'Zaha Hadid Architects', 'Norman Foster', 'BIG - Bjarke Ingels Group', 'Snøhetta', 'SOM'],
+    'Environnement': ['Veolia', 'Suez', 'Schneider Electric', 'EDF', 'Engie', 'Total', 'Eni', 'BP', 'Shell', 'Neste'],
+    'Tourisme': ['Airbnb', 'Booking.com', 'Expedia', 'TripAdvisor', 'TUI', 'Thomas Cook', 'Club Med', 'Marriott Vacations', 'Hyatt', 'Hilton'],
+    'Assistance': ['Seris', 'Onet', 'Fiducial', 'Samsic', 'Atalian', 'Groupe Crit', 'Securitas', 'G4S', 'Prosegur', 'Allied Universal'],
+    'Social': ['Emmaüs', 'Secours Catholique', 'Croix-Rouge', 'Médecins Sans Frontières', 'Amnesty International', 'UNICEF', 'Handicap International', 'Caritas', 'Oxfam', 'World Vision'],
+    'Événementiel': ['GL Events', 'Comexposium', 'Reed Exhibitions', 'VIPARIS', 'MCI Group', 'UFI', 'Messe Frankfurt', 'Informa', 'Tarsus', 'Clarion Events'],
+    'Manutention': ['Manitou', 'Toyota Material Handling', 'Caterpillar', 'Hyster-Yale', 'Jungheinrich', 'Linde Material Handling', 'Komatsu', 'Doosan', 'Mitsubishi Logisnext', 'Clark'],
+    'Défense': ['Thales', 'Dassault Aviation', 'Naval Group', 'MBDA', 'Airbus Defence and Space', 'Lockheed Martin', 'Northrop Grumman', 'Raytheon', 'BAE Systems', 'General Dynamics'],
+    'ONG': ['Greenpeace', 'WWF', 'Amnesty International', 'Oxfam', 'Médecins Sans Frontières', 'Human Rights Watch', 'CARE', 'Save the Children', 'International Rescue Committee', 'Plan International'],
+    'Industrie alimentaire': ['Danone', 'Nestlé', 'Unilever', 'Mondelez', 'Kraft Heinz', 'General Mills', 'PepsiCo', 'Coca-Cola', 'Mars', 'Kellogg\'s'],
+    'Culture': ['Le Louvre', 'Musée d\'Orsay', 'Centre Pompidou', 'Bibliothèque Nationale de France', 'Opéra de Paris', 'British Museum', 'Metropolitan Museum of Art', 'Rijksmuseum', 'Museo del Prado', 'Hermitage Museum'],
+    'BTP': ['Bouygues Construction', 'Eiffage', 'Vinci Construction', 'Colas', 'Spie Batignolles', 'Skanska', 'Hochtief', 'Strabag', 'Fluor', 'Bechtel'],
+    'Recherche': ['CNRS', 'INRAE', 'INSERM', 'CEA', 'IRSN', 'Institut Pasteur', 'NASA', 'ESA', 'Max Planck Society', 'MIT'],
+    'Aérospatial': ['Airbus', 'Boeing', 'Safran', 'Thales', 'Dassault Aviation', 'Lockheed Martin', 'Northrop Grumman', 'General Dynamics', 'Raytheon', 'BAE Systems'],
+    'Technologie': ['Google', 'Microsoft', 'IBM', 'Apple', 'Amazon', 'Facebook', 'Intel', 'Oracle', 'Cisco', 'Samsung'],
+    'Innovation': ['Tesla', 'SpaceX', 'Google X', 'Apple', 'Microsoft', 'Amazon', 'Facebook', 'IBM Research', 'Intel Labs', 'Bell Labs'],
+    'Restauration': ['McDonald\'s', 'Starbucks', 'Subway', 'KFC', 'Burger King', 'Pizza Hut', 'Domino\'s', 'Chipotle', 'Dunkin\'', 'Chick-fil-A'],
+    'Beauté': ['L\'Oréal', 'Estée Lauder', 'Procter & Gamble', 'Unilever', 'Shiseido', 'Coty', 'Beiersdorf', 'Johnson & Johnson', 'Avon', 'LVMH']
 }
+
 
 # Tâches par domaine
 taches = {
@@ -1233,6 +1457,53 @@ taches = {
         'Gestion des missions spatiales',
         'Analyse des données',
         'Développement de technologies spatiales'
+    ],
+    'Technologie': [
+        'Développement de logiciels',
+        'Conception de produits technologiques',
+        'Gestion de projets',
+        'Support technique',
+        'Formation des utilisateurs'
+    ],
+    'Beauté': [
+        'Conseil en soins de la peau',
+        'Maquillage professionnel',
+        'Coupe et coiffure',
+        'Manucure et pédicure',
+        'Soins du visage',
+        'Massage relaxant',
+        'Vente de produits de beauté',
+        'Formation en esthétique'
+    ],
+    'Restauration': [
+        'Préparation des plats',
+        'Gestion des commandes',
+        'Service en salle',
+        'Gestion des stocks',
+        'Nettoyage et entretien de la cuisine',
+        'Accueil et prise en charge des clients',
+        'Création de menus',
+        'Supervision de l\'équipe de cuisine'
+    ],
+    'Sécurité': [
+        'Surveillance des lieux',
+        'Gestion des systèmes de sécurité',
+        'Intervention en cas d\'urgence',
+        'Rédaction de rapports de sécurité',
+        'Formation des agents de sécurité',
+        'Contrôle des accès',
+        'Patrouilles régulières',
+        'Gestion des incidents'
+    ],
+    'Innovation': [
+        'Développement de nouvelles technologies',
+        'Veille technologique et analyse des tendances',
+        'Conception de prototypes',
+        'Gestion de projets innovants',
+        'Collaboration avec les équipes de recherche',
+        'Test et validation des nouveaux produits',
+        'Analyse des besoins du marché',
+        'Rédaction de brevets'
     ]
 }
 
@@ -1240,12 +1511,8 @@ taches = {
 def generer_cv(id):
     nationalite = random.choice(nationalites_afrique + nationalites_asie + nationalites_europe + nationalites_ameriques)
     genre = random.choice(['homme', 'femme'])
-    if nationalite not in prenoms_pays:
-        prenom = fake.first_name_male() if genre == 'homme' else fake.first_name_female()
-        nom = fake.last_name()
-    else:
-        prenom = random.choice(prenoms_pays[nationalite][genre])
-        nom = random.choice(noms_pays[nationalite])
+    prenom = random.choice(prenoms_pays[nationalite][genre])
+    nom = random.choice(noms_pays[nationalite])
     pays = nationalite  # Simplification, on considère que le pays est le même que la nationalité
     age = random.randint(22, 65)
     handicap = random.choices(handicaps, weights=weights_handicaps, k=1)[0]
@@ -1265,7 +1532,7 @@ def generer_cv(id):
 
     experiences = []
     for _ in range(nb_experiences):
-        entreprise = random.choice(descriptions_postes[domaine]) + f" {intitule} chez {random.choice(entreprises[domaine])}."
+        entreprise = f"{intitule} chez {random.choice(entreprises[domaine])}"
         debut = fake.date_between(start_date='-20y', end_date='-1y')
         fin = fake.date_between(start_date=debut, end_date='today')
         taches_realisees = random.sample(taches[domaine], k=random.randint(1, 3))
@@ -1304,6 +1571,9 @@ def generer_cv(id):
         nb_competences_techniques = random.randint(10, 15)
     
     competences_techniques_domaine = competences_techniques.get(domaine, [])
+    if nb_competences_techniques > len(competences_techniques_domaine):
+        nb_competences_techniques = len(competences_techniques_domaine)
+    
     competences_techniques_personne = random.sample(competences_techniques_domaine, k=nb_competences_techniques)
 
     centres_interet = random.sample(centres_d_interet, k=random.randint(2, 5))
@@ -1326,6 +1596,7 @@ def generer_cv(id):
         'competences_techniques': competences_techniques_personne,
         'centres_interet': centres_interet
     }
+
 
 # Générer 100 CVs
 cv_list = [generer_cv(i) for i in range(1, 101)]
